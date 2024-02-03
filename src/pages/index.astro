@@ -1,0 +1,12 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { App } from "../components/App";
+---
+
+<Layout title="Will you be my Valentine?" favicon="/cute-love-bear.png">
+  <App client:load />
+  <script
+    is:inline
+    src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"
+  ></script>
+</Layout>
